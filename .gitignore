@@ -1,0 +1,172 @@
+#####################################
+# Linux Kernel
+#####################################
+
+# Kernel build
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.mod.cmd
+*.o.cmd
+
+Module.symvers
+modules.order
+
+# Kernel generated
+.config
+.config.old
+.config.cmd
+
+include/config/
+include/generated/
+
+arch/*/include/generated/
+
+# Kernel image
+vmlinux
+vmlinux.*
+System.map
+
+# Device tree
+*.dtb
+*.dtbo
+
+
+#####################################
+# U-Boot
+#####################################
+
+u-boot
+u-boot.bin
+u-boot.img
+u-boot.map
+
+spl/
+tpl/
+
+#####################################
+# Root filesystem
+#####################################
+
+rootfs/
+rootfs.img
+filesystem/
+*.squashfs
+*.ubi
+*.ubifs
+*.jffs2
+
+
+#####################################
+# Package manager
+#####################################
+
+# RPM/Deb
+*.rpm
+*.deb
+
+# Yocto packages
+deploy/
+packages/
+
+
+#####################################
+# Logs
+#####################################
+
+*.log
+log/
+logs/
+
+*.trace
+*.dump
+
+
+#####################################
+# Compiler output
+#####################################
+
+*.a
+*.so
+*.so.*
+*.la
+
+*.elf
+*.map
+
+*.bin
+*.hex
+
+
+#####################################
+# C/C++ build
+#####################################
+
+*.d
+*.depend
+
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+Makefile.old
+
+
+#####################################
+# IDE
+#####################################
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+*~
+
+.project
+.settings/
+.classpath
+
+
+#####################################
+# Git
+#####################################
+
+.git/
+*.orig
+
+
+#####################################
+# Patch backup
+#####################################
+
+*.rej
+*.patch~
+*.bak
+
+
+#####################################
+# Environment
+#####################################
+
+.env
+.env.*
+
+*.local
+
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Python build
+build/
+dist/
+*.egg-info/
