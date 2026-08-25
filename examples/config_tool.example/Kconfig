@@ -1,0 +1,24 @@
+#
+# Top Kconfig
+#
+
+mainmenu "Kconfig Test"
+
+
+config TEST_ENABLE
+	bool "Enable test module"
+	default y
+
+
+config TEST_NAME
+	string "Test name"
+	default "kconfig-demo"
+
+
+config TEST_LEVEL
+	int "Test level"
+	default 10
+
+config TEST_DEBUG
+	bool "debug enable"
+	default n
